@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIS Business Analytics Club</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <title>MISBA Club | UMD Duluth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="glass-nav">
-        <div class="logo">MIS <span>Analytics</span></div>
+    <nav class="navbar">
+        <div class="logo">MISBA <span>UMD</span></div>
         <ul class="nav-links">
             <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
-            <li><a href="#" class="nav-link" data-target="join">Join Team</a></li>
+            <li><a href="#" class="nav-link" data-target="about">About</a></li>
+            <li><a href="#" class="nav-link" data-target="board">Exec Board</a></li>
             <li><a href="#" class="nav-link" data-target="events">Events</a></li>
-            <li><a href="#" class="nav-link" data-target="resources">News & Resources</a></li>
+            <li><a href="#" class="nav-link" data-target="showcase">Showcase</a></li>
+            <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+            <li><a href="#" class="nav-link btn-nav-join" data-target="join">Join Now</a></li>
         </ul>
     </nav>
 
@@ -22,137 +25,227 @@
         <section id="home" class="page-section active">
             <header class="hero">
                 <div class="hero-content">
-                    <h1>Data Driven. <br><span class="gradient-text">Future Focused.</span></h1>
-                    <p class="mission">Empowering students through technology, data visualization, and business intelligence.</p>
+                    <h1>Management Information Systems & <br><span class="highlight-gold">Business Analytics Club</span></h1>
+                    <p class="mission-tagline">Bridging the gap between business strategy and technological innovation at UMD Duluth.</p>
                     <div class="cta-group">
                         <button class="btn-primary nav-trigger" data-target="join">Join the Club</button>
-                        <button class="btn-secondary nav-trigger" data-target="events">View Events</button>
+                        <button class="btn-secondary nav-trigger" data-target="events">RSVP for Events</button>
                     </div>
                 </div>
             </header>
+        </section>
 
-            <div class="stats-container">
-                <div class="stat-card glass-card">
-                    <h2 class="counter" data-target="350">0</h2>
-                    <p>Active Members</p>
+        <section id="about" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About <span class="highlight-maroon">MISBA</span></h2>
+                    <p>Discover what we do and why you should be a part of it.</p>
                 </div>
-                <div class="stat-card glass-card">
-                    <h2 class="counter" data-target="45">0</h2>
-                    <p>Events Hosted</p>
+                
+                <div class="grid-2">
+                    <div class="card info-card">
+                        <h3>Our Mission</h3>
+                        <p>To provide UMD students with the resources, networking opportunities, and technical skills necessary to excel in the rapidly growing fields of Information Systems and Data Analytics.</p>
+                    </div>
+                    <div class="card info-card">
+                        <h3>What are MIS & BA?</h3>
+                        <p><strong>MIS</strong> focuses on managing technology infrastructure to solve business problems. <strong>Business Analytics</strong> relies on data, statistical analysis, and predictive modeling to drive corporate decision-making.</p>
+                    </div>
+                    <div class="card info-card full-width">
+                        <h3>The Value of Joining</h3>
+                        <p>Connect with corporate recruiters, attend exclusive technical workshops, build your resume through hands-on projects, and network with a community of driven students and alumni.</p>
+                    </div>
                 </div>
-                <div class="stat-card glass-card">
-                    <h2 class="counter" data-target="15">0</h2>
-                    <p>Corporate Partners</p>
+            </div>
+        </section>
+
+        <section id="board" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet the <span class="highlight-maroon">Board</span></h2>
+                    <p>The student leaders driving the MISBA Club forward.</p>
+                </div>
+
+                <div class="board-grid">
+                    <div class="card board-card">
+                        <div class="board-photo placeholder-img">Photo</div>
+                        <h3>Jane Doe</h3>
+                        <p class="role">President</p>
+                    </div>
+                    <div class="card board-card">
+                        <div class="board-photo placeholder-img">Photo</div>
+                        <h3>John Smith</h3>
+                        <p class="role">Vice President</p>
+                    </div>
+                    <div class="card board-card">
+                        <div class="board-photo placeholder-img">Photo</div>
+                        <h3>Alex Johnson</h3>
+                        <p class="role">Director of Events</p>
+                    </div>
+                    <div class="card board-card">
+                        <div class="board-photo placeholder-img">Photo</div>
+                        <h3>Taylor Swift</h3>
+                        <p class="role">Director of Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Upcoming <span class="highlight-maroon">Events</span></h2>
+                    <p>Guest speakers, workshops, and club meetings.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="events-list">
+                        <div class="card event-card">
+                            <div class="event-date">Nov 12 • 5:00 PM | LSBE 114</div>
+                            <h3>Target Corporate Tech Talk</h3>
+                            <p>Target recruiters discuss how they use predictive analytics in supply chain management.</p>
+                        </div>
+                        <div class="card event-card">
+                            <div class="event-date">Nov 19 • 6:00 PM | Lab 230</div>
+                            <h3>PowerBI Hands-on Workshop</h3>
+                            <p>Bring your laptop! We will be building interactive dashboards using a real dataset.</p>
+                        </div>
+                    </div>
+
+                    <div class="card form-card">
+                        <h3>RSVP Form</h3>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="hidden" name="form-type" value="Event RSVP">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Select Event</label>
+                                <select name="event" required>
+                                    <option value="" disabled selected>Choose...</option>
+                                    <option value="Target Tech Talk">Target Corporate Tech Talk (Nov 12)</option>
+                                    <option value="PowerBI Workshop">PowerBI Workshop (Nov 19)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-primary">Submit RSVP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project <span class="highlight-maroon">Showcase</span></h2>
+                    <p>A look back at our past achievements, projects, and corporate trips.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card showcase-card">
+                        <div class="showcase-img placeholder-img">Minneapolis Trip Photo</div>
+                        <div class="showcase-content">
+                            <h3>Twin Cities Corporate Trek</h3>
+                            <p>Members traveled to Minneapolis to tour the headquarters of Best Buy and Securian Financial, networking directly with IT leadership.</p>
+                        </div>
+                    </div>
+                    <div class="card showcase-card">
+                        <div class="showcase-img placeholder-img">Dashboard Photo</div>
+                        <div class="showcase-content">
+                            <h3>Spring Data Hackathon</h3>
+                            <p>Student teams analyzed 10 years of regional weather data to predict retail sales trends, presenting their findings to local business owners.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="join" class="page-section">
-            <div class="section-header">
-                <h2>Join the <span class="gradient-text">Team</span></h2>
-                <p>Unlock workshops, networking, and hands-on analytics projects.</p>
-            </div>
-            
-            <div class="form-container glass-card">
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">University Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="major">Major / Program</label>
-                        <input type="text" id="major" name="major" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="grad-year">Graduation Year</label>
-                        <input type="number" id="grad-year" name="grad-year" min="2026" max="2035" required>
-                    </div>
-                    <button type="submit" class="btn-primary w-100">Submit Application</button>
-                </form>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Join <span class="highlight-maroon">MISBA</span></h2>
+                    <p>Ready to level up your career? Fill out the form below to become a member.</p>
+                </div>
+
+                <div class="card form-card center-form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <input type="hidden" name="form-type" value="New Member Application">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>UMD Email Address</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Major / Minor</label>
+                            <input type="text" name="major" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Expected Graduation Year</label>
+                            <input type="text" name="grad-year" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Why do you want to join MISBA?</label>
+                            <textarea name="interest" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Submit Application</button>
+                    </form>
+                </div>
             </div>
         </section>
 
-        <section id="events" class="page-section">
-            <div class="section-header">
-                <h2>Upcoming <span class="gradient-text">Events</span></h2>
-                <p>Register for our latest tech talks and hackathons.</p>
-            </div>
-
-            <div class="events-grid">
-                <div class="event-card glass-card">
-                    <div class="event-date">Oct 15 • 5:00 PM</div>
-                    <h3>Intro to Python for Data Science</h3>
-                    <p>Learn the basics of Pandas and NumPy in this hands-on workshop.</p>
-                </div>
-                <div class="event-card glass-card">
-                    <div class="event-date">Oct 22 • 6:30 PM</div>
-                    <h3>Tableau Dashboard Workshop</h3>
-                    <p>Build stunning data visualizations with real corporate datasets.</p>
-                </div>
-            </div>
-
-            <div class="form-container glass-card mt-2">
-                <h3>Event Registration</h3>
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label for="event-name">Full Name</label>
-                        <input type="text" id="event-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="event-email">Email Address</label>
-                        <input type="email" id="event-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="event-select">Select Event</label>
-                        <select id="event-select" name="event" required>
-                            <option value="" disabled selected>Choose an event...</option>
-                            <option value="python-workshop">Intro to Python (Oct 15)</option>
-                            <option value="tableau-workshop">Tableau Workshop (Oct 22)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn-primary w-100">Register Now</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="resources" class="page-section">
-            <div class="section-header">
-                <h2>News & <span class="gradient-text">Resources</span></h2>
-                <p>Stay updated and level up your technical skills.</p>
-            </div>
-
-            <div class="resource-layout">
-                <div class="news-feed">
-                    <h3>Recent News</h3>
-                    <div class="news-item glass-card">
-                        <h4>Spring Hackathon Winners Announced!</h4>
-                        <p class="text-muted">Congratulations to Team DataCrunch for building the best predictive model utilizing our sponsor's dataset...</p>
-                        <a href="#" class="read-more">Read Full Story →</a>
-                    </div>
-                    <div class="news-item glass-card">
-                        <h4>New Partnership with TechCorp</h4>
-                        <p class="text-muted">We are thrilled to announce our new sponsorship for the upcoming semester, bringing exclusive internship opportunities to our members...</p>
-                        <a href="#" class="read-more">Read Full Story →</a>
-                    </div>
+        <section id="contact" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact <span class="highlight-maroon">Us</span></h2>
+                    <p>Have questions? Reach out to the board or connect with us on socials.</p>
                 </div>
 
-                <div class="resource-links glass-card">
-                    <h3>Learning Hub</h3>
-                    <ul class="link-list">
-                        <li><a href="#">SQL Cheat Sheet (PDF)</a></li>
-                        <li><a href="#">Python Data Science Handbook</a></li>
-                        <li><a href="#">Club GitHub Repository</a></li>
-                        <li><a href="#">Kaggle Datasets Guide</a></li>
-                        <li><a href="#">Data Viz Best Practices</a></li>
-                    </ul>
+                <div class="grid-2">
+                    <div class="card info-card">
+                        <h3>Connect Online</h3>
+                        <p>Follow us to stay up to date on everything happening with the club.</p>
+                        <ul class="social-links">
+                            <li><strong>Email:</strong> <a href="mailto:DuluthMISBA@gmail.com">DuluthMISBA@gmail.com</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mis-ba-duluth/" target="_blank">UMD MIS & BA Club</a></li>
+                            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/misbac_umd?igsh=MTRkMTVzYm5iMDFwYw==" target="_blank">@misbac_umd</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="card form-card">
+                        <h3>Send a Message</h3>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="hidden" name="form-type" value="General Contact Inquiry">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> UMD MISBA Club. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
