@@ -291,19 +291,14 @@ button {
     text-align: center;
 }
 
-.board-photo,
-.showcase-img,
-.placeholder-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, rgba(91, 15, 26, 0.7), rgba(212, 175, 55, 0.25));
-    border: 1px solid rgba(212, 175, 55, 0.22);
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-    font-weight: 600;
+.board-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+    border: 2px solid var(--gold);
 }
 
 .role {
